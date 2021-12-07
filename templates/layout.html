@@ -19,18 +19,34 @@
 <div class="wrapper">
 
     {% block menu %}
+        <header class="header">
+            <ul class="main_menu">
+                <li><a href="#"><p>главная</p></a></li>
+                <li><a href="#"><p>блог</p></a></li>
+                <li><a href="#"><p>регистрация</p></a></li>
+                <li><a href="#"><p>логин</p></a></li>
+                <li><a href="#"><p>аккаунт</p></a></li>
+                <li><a href="#"><p>создать</p></a></li>
+                <li><a href="#"><p>выход</p></a></li>
+            </ul>
+        </header>
     {% endblock menu %}
 
 
-    {% block content %}
-    {% endblock content %}
+    {% block content %}{% endblock content %}
 
 
     {% block main_page %}
+        <div class="content">
+
+        </div>
     {% endblock main_page %}
 
 
     {% block footer %}
+        <footer class="footer">Все права защищены<br>
+            &#169; Балушкин Сергей 2021
+        </footer>
     {% endblock footer %}
 
 </div>

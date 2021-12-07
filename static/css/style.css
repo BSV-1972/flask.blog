@@ -1,7 +1,80 @@
-h1 {
-    color: #9C1A1C;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.wrapper {
-    outline: 1px orange;
+html, body {
+    height: 100%;
+}
+
+/* MAIN_MENU */
+
+.header{
+    height: 140px;
+    outline: 1px red solid;
+    background-image: linear-gradient(90deg, #678ae0f2, #efefef);
+
+}
+
+.main_menu{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+
+.main_menu a{
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: 400;
+}
+
+.main_menu li{
+    list-style: none;
+    margin-right: 10px;
+    width: 140px;
+    font-family: monospace;
+    margin-top: 5%;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* анимация для меню: при наведении (ховер) */
+
+.main_menu li:hover{
+    transition-duration: 1s;
+    box-shadow: 4px 5px 50px gray;
+}
+
+.main_menu p{
+    font-size: 18px;
+}
+
+/* WRAPPER */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* CONTENT */
+
+.content{
+    width: 60%;
+    margin: 100px auto 0;
+    flex: 1 0 auto;
+}
+
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: monospace;
+    background: #efefef;
+    flex: 0 0 auto;
 }
